@@ -1,4 +1,4 @@
-# GEOLOCALIZAÇÃO COM A API DO GOOGLE E A FETCH API
+# GEOLOCALIZAÇÃO COM A API DO GOOGLE E FETCH API
 	Durante o evento da Next Level Week 3, da Rocketseat,na trilha Discovery, os participantes desenvolveram um aplicativo chamado Happy,
 que cadastra instituições de apoio a crianças desamparadas em um mapa. Foi utilizado HTML5, CSS3, JavaScript no frontend da aplicação
 e NodeJS e SQLite no backend.
