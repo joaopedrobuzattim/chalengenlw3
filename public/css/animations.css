@@ -1,0 +1,49 @@
+/*animações */
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation-name: up;
+  animation-duration: 300ms;
+  /*após o fim da animação, a propriedade de 'to' ficará aplicada*/
+  animation-fill-mode: backwards;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-right {
+  animation: right;
+  animation-duration: 400ms;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-appear {
+  animation-name: appear;
+  animation-duration: 300ms;
+  /*Animação termina no efeito colocado em 'to'*/
+  animation-fill-mode: backwards;
+}

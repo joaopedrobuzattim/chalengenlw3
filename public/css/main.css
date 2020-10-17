@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+}
+
+/* em --> faz a comparação com o elemento pai*/
+/* rem --> faz a comparação com o elemento principal (root), nesse caso, a tag <html>*/
+/* podem ser em px ou %*/
+
+:root {
+  /*Definindo a fonte do root element*/
+  font-size: 62.5%; /*Equivale a 10px*/
+}
+
+body,
+input,
+button,
+textarea {
+  /*
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    */
+  /*Short hand notation*/
+  font: 400 1.8rem/1 "Nunito", sans-serif;
+}
+
+body {
+  background-color: #ebf2f5;
+}
+
+
+
