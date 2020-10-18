@@ -37,15 +37,18 @@ async function addMarkerBySearch(e){
 
     e.preventDefault();
     let address = document.querySelector('.search-input-container input').value;
-    const parsedAddress = address.replace(/ /g, "+");
+    const parsedAddress = address.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ /g, "+");
     const url = await fetch(
         `https://maps.googleapis.com/maps/api/geocode/json?address=${parsedAddress}&key=AIzaSyDk4HWqPCuAR-8JxW09zKOuvhFAZHhA2s0`
     );
     const geolocation = await url.json();
     const geolocationObject = geolocation.results[0].geometry.location;
+
     const { lat, lng } = geolocationObject;
+
     marker && map.removeLayer(marker);
     map.setView([lat,lng], 17)
+
     marker = L.marker([lat,lng],{icon})
     .addTo(map);
 }
