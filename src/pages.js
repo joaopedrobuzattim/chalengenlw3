@@ -1,6 +1,6 @@
 const Database = require("./database/db");
 const saveOrphanage = require("./database/save-orphanage");
-const fetch = require("node-fetch");
+const geolocation = require('./geolocation/geolocate');
 
 module.exports = {
   index(req, res) {
@@ -33,14 +33,7 @@ module.exports = {
         const db = await Database;
         const orphanages = await db.all("SELECT * FROM orphanages");
         const address = req.query.address;
-        const parsedAddress = address.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ /g, "+");
-        const url = await fetch(
-          `https://maps.googleapis.com/maps/api/geocode/json?address=${parsedAddress}&key=AIzaSyDk4HWqPCuAR-8JxW09zKOuvhFAZHhA2s0`
-        );
-        const geolocation = await url.json();
-        const geolocationObject = geolocation.results[0].geometry.location;
-        const { lat, lng } = geolocationObject;
-        const latLngFocus = [{ lat, lng }];
+        const latLngFocus = await geolocation(address);
         return res.render("orphanages", { orphanages, latLngFocus });
       } catch (err) {
         console.log("Houve um erro: " + err);
