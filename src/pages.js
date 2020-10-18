@@ -33,7 +33,7 @@ module.exports = {
         const db = await Database;
         const orphanages = await db.all("SELECT * FROM orphanages");
         const address = req.query.address;
-        const parsedAddress = address.replace(/ /g, "+");
+        const parsedAddress = address.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ /g, "+");
         const url = await fetch(
           `https://maps.googleapis.com/maps/api/geocode/json?address=${parsedAddress}&key=AIzaSyDk4HWqPCuAR-8JxW09zKOuvhFAZHhA2s0`
         );
