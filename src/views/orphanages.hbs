@@ -44,9 +44,9 @@
         {{/each}}
       </div>
       <div class="focus-location">
-        {{#each latLngFocus}}
-        <span hidden data-focuslat="{{this.lat}}" data-focuslng="{{this.lng}}"></span>
-        {{/each}}
+        {{#if latLngFocus}}
+        <span hidden data-focuslat="{{latLngFocus.lat}}" data-focuslng="{{latLngFocus.lng}}"></span>
+        {{/if}}
       </div>
     </div>
 
