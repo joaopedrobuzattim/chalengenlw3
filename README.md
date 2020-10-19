@@ -7,7 +7,7 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A feature deste repositório contém um sistema de geolocalização para procurar e cadastrar instituições. A funcionalidade foi desenvolvida por meio da Google API e da Fetch API. O sistema foi implantado no backend e no frontend, no backend por meio de uma requisição GET e do uso do múdulo node-fetch para a busca de locais e , no frontend, por meio da Fetch API para a marcação de locais no mapa.</p>
 
-<p>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBS: Insira na fetch(url) sua Google API key com a Geolocalização habilitada</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBS: Insira na fetch(url) sua Google API key com a Geolocalização habilitada</p>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Google Geolocation API](https://developers.google.com/maps/documentation/geolocation/overview)
 
