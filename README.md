@@ -1,17 +1,34 @@
-# DESAFIO NEXT LEVEL WEEK #3
-## GEOLOCALIZAÇÃO COM API DO GOOGLE E FETCH
+# CHALENGE NEXT LEVEL WEEK #3
 
-<p style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durante o evento da Next Level Week 3, da Rocketseat,na trilha Discovery, os participantes desenvolveram um aplicativo chamado Happy, que cadastra instituições de apoio a crianças desamparadas em um mapa. Foi utilizado HTML5, CSS3, JavaScript no frontend da aplicação e NodeJS e SQLite no backend.</p>
+<strong>What is Next Level Week #3?</strong>
+* It's the third edition of an event promoted by [Rocketseat :rocket:](https://rocketseat.com.br/), that intends to improve your skils as a web developer!
+<hr/>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No desafio do fim do evento, os participantes deveriam adicionar uma nova feature ao site.
+<strong> Technologies </strong>
+* Node.js
+* Express
+* SQLite
+* Handlebars
+<hr/>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A feature deste repositório contém um sistema de geolocalização para procurar e cadastrar instituições. A funcionalidade foi desenvolvida por meio da Google API e da Fetch API. O sistema foi implantado no backend e no frontend, no backend por meio de uma requisição GET e do uso do múdulo node-fetch para a busca de locais e , no frontend, por meio da Fetch API para a marcação de locais no mapa.</p>
+<strong> Check the original project: :octocat: https://github.com/rocketseat-education/nlw-03-discovery  </strong>
+<hr/>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBS: Insira na fetch(url) sua Google API key com a Geolocalização habilitada</p>
+## CHALENGE
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Google Geolocation API](https://developers.google.com/maps/documentation/geolocation/overview)
+<p> Add a new feature in the project! </p>
+
+<p> <strong> New features: </strong> </p>
+
+* [Google Geolocation API](https://developers.google.com/maps/documentation/geolocation/overview)
+* [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+* [node-fetch](https://www.npmjs.com/package/node-fetch)
+
+** <strong> Don't forget to enable the Geolocalization of your Google API Key and insert it on the "fetch('url')" of the following files:    </strong>
+* src / geolocation / geolocate.js
+* public / scripts / page-create-orphanage.js
+ 
 
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Fetch API](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch)
 
 
