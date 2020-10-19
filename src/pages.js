@@ -1,6 +1,6 @@
 const Database = require("./database/db");
 const saveOrphanage = require("./database/save-orphanage");
-const geolocation = require('./geolocation/geolocate');
+const geolocation = require("./geolocation/geolocate");
 
 module.exports = {
   index(req, res) {
@@ -37,6 +37,7 @@ module.exports = {
         return res.render("orphanages", { orphanages, latLngFocus });
       } catch (err) {
         console.log("Houve um erro: " + err);
+        return res.send("Erro!" + err);
       }
     } else {
       try {
@@ -44,13 +45,13 @@ module.exports = {
         const orphanages = await db.all("SELECT * FROM orphanages");
         return res.render("orphanages", { orphanages });
       } catch (error) {
-        console.log(error);
-        return res.send("Erro no banco de dados!");
+        console.log("Error: " + error);
+        return res.send("Erro!" + error);
       }
     }
   },
   async createOrphanage(req, res) {
-      return res.render("create-orphanage");
+    return res.render("create-orphanage");
   },
   async saveOrphanage(req, res) {
     const fields = req.body;
