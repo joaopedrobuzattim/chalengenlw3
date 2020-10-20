@@ -16,7 +16,7 @@
 
 ## CHALENGE
 
-<p> Add a new feature in the project! </p>
+<p> Add a new feature to the project! </p>
 
 <p> <strong> New features: </strong> </p>
 
