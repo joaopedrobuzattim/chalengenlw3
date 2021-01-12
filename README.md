@@ -25,6 +25,7 @@
 * [node-fetch](https://www.npmjs.com/package/node-fetch)
 
 ** <strong> Don't forget to enable the Geolocalization of your Google API Key and insert it on the "fetch('url')" of the following files:    </strong>
+
 * src / geolocation / geolocate.js
 * public / scripts / page-create-orphanage.js
  
